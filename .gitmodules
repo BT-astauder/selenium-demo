@@ -1,0 +1,12 @@
+[submodule "repos/partner-contact"]
+	path = repos/partner-contact
+	url = git@github.com:brain-tec/partner-contact.git
+	branch = 10.0
+[submodule "repos/server-tools"]
+	path = repos/server-tools
+	url = git@github.com:brain-tec/server-tools.git
+	branch = 10.0
+[submodule "repos/BT-Developer"]
+	path = repos/BT-Developer
+	url = git@github.com:brain-tec/BT-Developer.git
+	branch = 10.0

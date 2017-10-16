@@ -1,0 +1,2 @@
+DBSERVER=“{{PRODUCTIV_URI}}"
+DBNAME="prod"

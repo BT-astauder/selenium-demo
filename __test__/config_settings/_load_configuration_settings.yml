@@ -1,0 +1,12 @@
+-
+    Create context
+-
+    !context
+        called_from: '__test__'
+
+-
+    Create wizard
+-
+    !python {model: configure.odoo}: |
+        configure_odoo = self.env['configure.odoo'].create({})
+        configure_odoo.load()
