@@ -6,3 +6,5 @@
 #
 #    See LICENSE file for full licensing details.
 ##############################################################################
+
+import test_selenium

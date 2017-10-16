@@ -10,3 +10,7 @@
 	path = repos/BT-Developer
 	url = git@github.com:brain-tec/BT-Developer.git
 	branch = 10.0
+[submodule "repos/odoo-robot-framework"]
+	path = repos/odoo-robot-framework
+	url = git@github.com:brain-tec/odoo-robot-framework.git
+	branch = master
