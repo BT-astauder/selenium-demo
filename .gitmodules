@@ -14,3 +14,7 @@
 	path = repos/odoo-robot-framework
 	url = git@github.com:brain-tec/odoo-robot-framework.git
 	branch = master
+[submodule "repos/web_selenium"]
+	path = repos/web_selenium
+	url = git@github.com:brain-tec/web_selenium.git
+	branch = 10.0
