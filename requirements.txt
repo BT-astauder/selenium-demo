@@ -1,2 +1,3 @@
+pyOpenSSL==16.2.0
 robotframework
 robotframework-selenium2library
