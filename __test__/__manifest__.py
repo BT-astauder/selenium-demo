@@ -40,8 +40,8 @@
         'web_planner',
         'web_settings_dashboard',
         'web_tour'],
-    'data': ['config_settings/_load_configuration_settings.yml',
-             'config_settings/res.company.csv',
+    'data': [# 'config_settings/_load_configuration_settings.yml',
+             # 'config_settings/res.company.csv',
              ],
     'qweb': [
     ],
