@@ -17,4 +17,4 @@
 [submodule "repos/web_selenium"]
 	path = repos/web_selenium
 	url = git@github.com:brain-tec/web_selenium.git
-	branch = 10.0
+	branch = 10.0.seleniumdemo
