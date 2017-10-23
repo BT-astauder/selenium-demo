@@ -25,16 +25,16 @@ Test Google
     Submit Form
     Wait Until Page Contains    Searches related to webdriver
 
-# Login
-#	Open Browser    ${URL}
-#    Capture Page Screenshot
-#    Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
-#	Go To     ${URL}
-#	Sleep    20s
-#    Capture Page Screenshot
+Login
+    Open Browser    ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
+    Capture Page Screenshot
+    Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
+	Go To     ${URL}
+	Sleep    20s
+    Capture Page Screenshot
 
-#Just a test
-#    Close Browser
+Just a test
+    Close Browser
 
 #Failure
 #	Should Be True    "a" == "b"
