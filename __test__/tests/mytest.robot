@@ -16,6 +16,7 @@ Start Browser
     Open Browser            https://www.google.com/ncr  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
     Maximize Browser Window
 
+
 *** Test Cases ***
 Test Google
     [Documentation]         Test Google
