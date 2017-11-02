@@ -18,14 +18,15 @@ Start Browser
 
 
 *** Test Cases ***
-Test Google
-    [Documentation]         Test Google
-    output video url
-    Input Text    q    webdriver
-    Submit Form
-    Wait Until Page Contains    Searches related to webdriver
+# Test Google
+#     [Documentation]         Test Google
+#     output video url
+#     Input Text    q    webdriver
+#     Submit Form
+#     Wait Until Page Contains    Searches related to webdriver
 
 Login
+    output video url
     Open Browser    ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
     Capture Page Screenshot
     Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
@@ -33,8 +34,8 @@ Login
 	Sleep    20s
     Capture Page Screenshot
 
-Just a test
-    Close Browser
+# Just a test
+#     Close Browser
 
 #Failure
 #	Should Be True    "a" == "b"
