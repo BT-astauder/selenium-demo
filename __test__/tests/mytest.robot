@@ -1,7 +1,6 @@
 *** Settings ***
 Library         Selenium2Library
 Library         output_video_url.py
-Test Setup                  Start browser
 Test Teardown               Close All Browsers
 
 *** Variables ***
@@ -13,10 +12,7 @@ ${DESIRED_CAPABILITIES}     platform:VISTA,video:True,version:11
 *** Keywords ***
 Start Browser
     [Documentation]         Start browser on Selenium Grid
-    output video url
-    Open Browser            ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
-    Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
-	Go To     ${URL}
+    Open Browser            https://www.google.com/ncr  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
     Maximize Browser Window
 
 
@@ -29,7 +25,13 @@ Start Browser
 #     Wait Until Page Contains    Searches related to webdriver
 
 Login
+    log to console  ${URL}
+    output video url
+    Open Browser    ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
+    Maximize Browser Window
     Capture Page Screenshot
+    Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
+	Go To     ${URL}
 	Sleep    20s
     Capture Page Screenshot
 
