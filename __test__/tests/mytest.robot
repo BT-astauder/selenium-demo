@@ -13,7 +13,7 @@ ${DESIRED_CAPABILITIES}     platform:VISTA,video:True,version:11
 *** Keywords ***
 Start Browser
     [Documentation]         Start browser on Selenium Grid
-    log to console  ${URL}
+    log to console          URL, ${URL}
     Open Browser            ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
     Maximize Browser Window
     output video url
