@@ -10,15 +10,26 @@ ${ALIAS}                    None
 ${REMOTE_URL}               http://8m4HoRq92in3C2JE8vFll0prTQgfGfAE:svcGcsF5BSY3LyyKU4V5UbnDStIoz9SR@F1P5412S.gridlastic.com:80/wd/hub
 ${DESIRED_CAPABILITIES}     platform:VISTA,video:True,version:11
 
-
-*** Test Cases ***
-
-Login
+*** Keywords ***
+Start Browser
+    [Documentation]         Start browser on Selenium Grid
     output video url
-    Open Browser    ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
-    Capture Page Screenshot
+    Open Browser            ${URL}  ${BROWSER}  ${ALIAS}  ${REMOTE_URL}  ${DESIRED_CAPABILITIES}
     Add Cookie   ${COOKIE_NAME}    ${COOKIE_VALUE}
 	Go To     ${URL}
+    Maximize Browser Window
+
+
+*** Test Cases ***
+# Test Google
+#     [Documentation]         Test Google
+#     output video url
+#     Input Text    q    webdriver
+#     Submit Form
+#     Wait Until Page Contains    Searches related to webdriver
+
+Login
+    Capture Page Screenshot
 	Sleep    20s
     Capture Page Screenshot
 
